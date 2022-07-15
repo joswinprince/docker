@@ -16,3 +16,13 @@ psql --host localhost --port 5432 --dbname postgres --username postgres
 ```
 createdb -h localhost -p 5432 -u postgres -o Adam
 ```
+
+### create postgres db if missing
+```
+createdb --maintenance-db=template1 -T template0 postgres -U postgres;
+```
+
+### create a postgres db using smdline
+```
+createdb -h localhost -p 5432 -U postgres trees
+```
