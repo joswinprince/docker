@@ -12,3 +12,7 @@ open  docker desktop to see the server running.
 ```
 psql --host localhost --port 5432 --dbname postgres --username postgres
 ```
+### create database and assign ownership
+```
+createdb -h localhost -p 5432 -u postgres -o Adam
+```
